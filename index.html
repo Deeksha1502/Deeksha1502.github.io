@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Form BIT</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <script language="javascript">
+
+function validateform()
+
+{
+
+ //first name
+var fname=document.myform.fname.value;
+if (fname == "")
+  {
+  alert("First Name can't be blank");
+  document.myform.fname.focus();
+  return false;
+  }
+  //last name
+
+  var lname=document.myform.lname.value;
+ if (lname == "")
+   {
+   alert("Last Name can't be blank");
+   document.myform.lname.focus();
+   return false;
+   }
+
+   //usn
+
+   var usn=document.myform.usn.value;
+ if (usn == "")
+   {
+   alert("usn can't be blank");
+   document.myform.usn.focus();
+   return false;
+   }
+
+   //phone
+   var phone=document.myform.phone.value;
+ if (phone == "")
+   {
+   alert("phone can't be blank");
+   document.myform.phone.focus();
+   return false;
+   }
+
+
+
+   //email
+   
+   var email=document.myform.email.value;
+ if (email == "")
+   {
+   alert("email can't be blank");
+   document.myform.email.focus();
+   return false;
+   }
+
+   //address
+
+       var address1=document.myform.address1.value;
+ if (address1 == "")
+   {
+   alert("address can't be blank");
+   document.myform.address1.focus();
+   return false;
+   }
+
+
+   //city
+
+
+   var city=document.myform.city.value;
+ if (city == "")
+   {
+   alert("city can't be blank");
+   document.myform.city.focus();
+   return false;
+   }
+
+   //state
+
+   var state=document.myform.state.value;
+ if (state == "")
+   {
+   alert("state can't be blank");
+   document.myform.state.focus();
+   return false;
+   }
+
+    
+
+
+
+
+
+
+
+}
+
+      </script>
+</head>
+<body>
+  <div class="top-container">
+         <img class="logo" src="logo.jpg" alt="image" >
+       <label><strong>Bangalore Institute of technology<br>
+             K.R. ROAD, V V PURA, <br>BENGALURU-560004,<br>INDIA</strong>
+            </label>
+          </div>
+          <hr>
+
+    <h3>GRIEVANCE FORM</h3>
+
+
+    <div id="form">
+<form name="myform" method="post" action="mailto:deekshad1502@gmail.com;subject:Grievance" enctype="multipart/form-data" onsubmit="return validateform()" >
+
+ 
+    <!--name-->
+    <label>First Name:</label><span id="star">*</span>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="fname">
+      
+       </div>
+       </div>
+
+       <label>Last Name:</label><span id="star">*</span>
+      
+      
+  
+       <div class="row">
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lname">
+    </div>
+    
+     </div>
+    <!--class-->
+    <label>Semester:</label>
+
+
+
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="0">Select</option>
+        <option value="1st Semester">1st Semester</option>
+        <option value="2nd Semester">2nd Semester</option>
+        <option value="3rd Semester">3rd Semester</option>
+        <option value="4th Semester">4th Semester</option>
+        <option value="5th Semester">5th Semester</option>
+        <option value="6th Semester">6th Semester</option>
+        <option value="7th Semester">7th Semester</option>
+        <option value="8th Semester">8th Semester</option>
+
+      </select>
+
+
+     
+      <!--section-->
+      <label>Section:</label>
+      
+
+
+
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="SECTION A">A</option>
+        <option value="SECTION B">B </option>
+        <option value="SECTION C">C</option>
+        <option value="SECTION D">D</option>
+        <option value="SECTION E">E</option>
+        <option value="SECTION F">F</option>
+        <option value="SECTION G">G</option>
+        <option value="SECTION H">H</option>
+        <option value="SECTION J">J</option>
+        <option value="SECTION K">K</option>
+        <option value="SECTION L">L</option>
+        <option value="SECTION M">M</option>
+
+      </select>
+
+
+      <!--USN-->
+      <label>USN:</label><span id="star">*</span>
+      <div class="col-md-4">
+        <input type="text" class="form-control" name="usn"/>   </div>
+      
+
+      <!--Department-->
+      <label>Department:</label><span id="star">*</span>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="SECTION A">CSE</option>
+        <option value="SECTION B">ISE</option>
+        <option value="SECTION C">ECE</option>
+        <option value="SECTION D">ETE</option>
+        <option value="SECTION E">EIE</option>
+        <option value="SECTION F">EEE</option>
+        <option value="SECTION G">CV</option>
+        <option value="SECTION H">EME</option>
+        <option value="SECTION J">AI ML</option>
+       
+      </select>
+      
+
+      <!--Phone No.-->
+      <label>Phone No.:</label> <span id="star">*</span>
+      <div class="col-md-4">
+        <input type="number" class="form-control" name="phone">
+      </div>
+     
+    <!--email-->
+    <label for="inputEmail4" class="form-label">Email</label><span id="star">*</span>
+    <div class="col-md-4">
+
+      <input type="email" class="form-control" id="inputEmail4" name="email">
+    </div>
+  
+
+
+     
+       
+        
+    <label for="inputAddress" class="form-label">Address</label><span id="star">*</span>
+
+        <div class="col-md-6">
+
+          <input type="text" class="form-control" id="inputAddress" placeholder="" name="address1">
+        </div>
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <div class="col-md-6">
+
+          <input type="text" class="form-control" id="inputAddress2" placeholder="">
+        </div>
+
+        <label for="inputCity" class="form-label">City</label><span id="star">*</span>
+        <div class="col-md-6">
+
+          <input type="text" class="form-control" id="inputCity" name="city">
+        </div>
+
+        <label for="inputState" class="form-label">State</label><span id="star">*</span>
+        <div class="col-md-4">
+
+          <input type="text" class="form-control" id="inputCity" name="state">
+
+        </div>
+        <label for="inputZip" class="form-label">Zip</label>
+        <div class="col-md-2">
+
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <br>
+        <br>
+
+
+
+
+        <hr>
+
+
+        <!--complaint information-->
+        <h3>Complaint Information</h3>
+   
+        <label>Date of Incident:</label>
+        <div class="form-floating">
+          
+          <input type="text" class="form-control" id="indidentdate">
+        </div>
+
+        <label>Location of incident:</label>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="locationincident">
+        </div>
+
+        <label>Time of Incident:</label>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="timeincident">
+        </div>
+
+
+<br>
+
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              I wish to remain anonymous
+ 
+            </label>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-2">
+
+        <input type="submit" value="Submit"/> 
+        <input type="reset" value="Reset"/>
+      
+      </div>
+      </form>
+      </div>
+
+
+
+
+
+</body>
+</html>
